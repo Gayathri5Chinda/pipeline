@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:21-jdk
 
 ARG artifact=target/pipeline.jar
 
