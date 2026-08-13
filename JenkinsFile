@@ -67,6 +67,7 @@ pipeline {
                    git status
                 '''
                 sh '''
+                    git config --global --add safe.directory "/var/lib/jenkins/workspace/pipeline demo"
                     git config user.email "gayathrichinda54@gmail.com"
                     git config user.name "Gayathri5Chinda"
                     BUILD_NUMBER=${BUILD_NUMBER}
