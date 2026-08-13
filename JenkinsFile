@@ -61,10 +61,7 @@ pipeline {
                    pwd
 
                    echo "===== FILES ====="
-                   ls -la
-
-                   echo "===== GIT ====="
-                   git status
+                   ls -la   
                 '''
                 sh '''
                     git config --global --add safe.directory "/var/lib/jenkins/workspace/pipeline demo"
